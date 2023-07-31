@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "document-qa"
+version = "0.1.0"
+description = ""
+authors = ["Ahmed Besbes <ahmed.besbes@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "document_qa"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.0.247"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
