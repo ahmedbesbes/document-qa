@@ -10,6 +10,12 @@ packages = [{include = "document_qa"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 langchain = "^0.0.247"
+python-dotenv = "^1.0.0"
+pypdf = "^3.14.0"
+rich = "^13.5.1"
+openai = "^0.27.8"
+chromadb = "^0.4.3"
+tiktoken = "^0.4.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.7.0"
