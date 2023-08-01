@@ -1,7 +1,7 @@
 # document-qa
 
 
-This a little experiment with Langchain and Chroma to build a document question answering system over a PDF file.
+This is a little experiment with Langchain and Chroma to build a document question-answering system over a PDF file.
 
 
 ### Architecture
@@ -18,7 +18,7 @@ The architecture behind this system is detailed in the following diagram
 
 3. Run: `poetry install --with dev`
 
-4. Create a `.env` file at the root of the project with your open AI key
+4. Create a `.env` file at the root of the project with your OpenAI key
 
 ```
 OPENAI_API_KEY=<YOUR_API_KEY_GOES_HERE>
