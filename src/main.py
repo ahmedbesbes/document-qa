@@ -62,17 +62,6 @@ def main(config: Config):
             embedding_function=OpenAIEmbeddings(),
         )
 
-    relevant_chunks = vectorstore.similarity_search(
-        query=config.question,
-        k=config.top_k,
-    )
-
-    logger.info("Printing relevant documents ...")
-
-    for relevant_chunk in relevant_chunks:
-        print(relevant_chunk.page_content)
-        print("\n=======\n")
-
     logger.info("Generating answer with LLM")
 
     template = """Use the following pieces of context to answer the question at the end. 
